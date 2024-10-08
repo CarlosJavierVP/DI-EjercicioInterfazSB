@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="383.0" prefWidth="833.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="com.example.ejerciciomenu.HelloController">
+<VBox alignment="CENTER" prefHeight="438.0" prefWidth="817.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="com.example.ejerciciomenu.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -30,12 +30,12 @@
       <font>
          <Font name="System Bold" size="18.0" />
       </font></Label>
-   <GridPane alignment="CENTER" hgap="30.0" vgap="30.0">
+   <GridPane alignment="CENTER" hgap="30.0" prefHeight="132.0" prefWidth="773.0" vgap="30.0">
      <columnConstraints>
        <ColumnConstraints hgrow="SOMETIMES" maxWidth="97.0" minWidth="10.0" prefWidth="59.0" />
        <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="123.0" />
-         <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="74.0" />
-         <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="127.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="22.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="349.0" minWidth="10.0" prefWidth="343.0" />
      </columnConstraints>
      <rowConstraints>
        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -44,23 +44,23 @@
      </rowConstraints>
       <children>
          <Label text="Title:" />
-         <TextField prefHeight="25.0" prefWidth="113.0" GridPane.columnIndex="1">
+         <TextField prefHeight="25.0" prefWidth="113.0" promptText="Enter title game" GridPane.columnIndex="1">
             <padding>
                <Insets top="10.0" />
             </padding>
          </TextField>
          <Label text="Platform:" GridPane.rowIndex="1" />
          <Label text="Genre:" GridPane.rowIndex="2" />
-         <Label text="Developer:" GridPane.columnIndex="2" />
+         <Label prefHeight="17.0" prefWidth="69.0" text="Developer:" GridPane.columnIndex="2" />
          <Label prefHeight="17.0" prefWidth="72.0" text="Description:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
          <Label text="Year:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-         <TextField GridPane.columnIndex="3">
+         <TextField prefHeight="25.0" prefWidth="255.0" promptText="Enter game developer" GridPane.columnIndex="3">
             <GridPane.margin>
                <Insets />
             </GridPane.margin>
          </TextField>
-         <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-         <TextField GridPane.columnIndex="3" GridPane.rowIndex="2" />
+         <TextArea prefHeight="43.0" prefWidth="349.0" promptText="Enter game description" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         <TextField prefHeight="9.0" prefWidth="349.0" promptText="Enter release year" GridPane.columnIndex="3" GridPane.rowIndex="2" />
          <ComboBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
          <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       </children>
