@@ -24,8 +24,6 @@ public class HelloController implements Initializable {
     @FXML
     private TextField title;
     @FXML
-    private ComboBox platform;
-    @FXML
     private Spinner year;
     @FXML
     private Label info;
