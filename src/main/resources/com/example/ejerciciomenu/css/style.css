@@ -8,4 +8,14 @@
 
 #root{
     -fx-background-color: white;
+    /*
+    -fx-background-image: url(../img/nombre.jpg);
+    -fx-background-position: center,center;
+    -fx-background-size: cover;
+
+     */
+}
+
+#vbox{
+    -fx-background-color: rgba(255, 255, 255, 0.5);
 }
