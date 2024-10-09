@@ -4,6 +4,10 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
@@ -16,7 +20,6 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
 
 <BorderPane id="root" prefHeight="540.0" prefWidth="866.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ejerciciomenu.HelloController">
    <center>
@@ -62,7 +65,7 @@
                </TextField>
                <TextArea fx:id="description" prefHeight="43.0" prefWidth="349.0" promptText="Enter game description" GridPane.columnIndex="3" GridPane.rowIndex="1" />
                <ChoiceBox fx:id="genre" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-               <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               <ChoiceBox fx:id="platform" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                <Spinner fx:id="year" editable="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
             </children>
             <padding>
@@ -96,4 +99,22 @@
    <bottom>
       <Label fx:id="info" BorderPane.alignment="CENTER" />
    </bottom>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Abrir" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#salir" text="Cerrar" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#mostrarAcerca" text="Acerca de" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
 </BorderPane>
